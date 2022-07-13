@@ -1,0 +1,81 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    background-color: #020C1B;
+    padding: 0;
+
+}
+html {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.container {
+    font-size: 32px;
+    padding-top: 100px;
+    display: flex;
+}
+
+.header {
+    color: white;
+    display: flex;
+    position: sticky;
+    top: 0;
+    max-height: 150px;
+    padding-top: 20px;
+}
+.nav {
+    word-spacing: 30px;
+    display: flex;
+    padding-left: 680px;
+    font-size: 32px;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    background-color:white;
+}
+.aboutxt {
+    color: white;
+}
+a {
+    font-style: none;
+}
+a:hover {
+    color: lightgreen;
+}
+.left-column {
+    width: 250px ;
+    color:white;
+}
+.right-column {
+    padding-left: 50px;
+    color:white;
+    text-align: left;
+}
+.hi {
+    font-size: 64px;
+    color:lightgreen;
+}
+.name {
+    font-size: 48px;
+    margin-top: -60px;
+}
+.job {
+    margin-top: -60px;
+    color:lightgrey;
+}
+.block {
+    border: lightgreen solid 4px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 150px;
+}
+.blocktxt {
+    padding: 5px;
+}
