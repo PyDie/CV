@@ -9,6 +9,8 @@ html {
     width: 1280px;
     margin: 0 auto;
     padding: 0 auto;
+    overflow:hidden;
+    display: flex;
 }
 .container {
     font-size: 32px;
@@ -82,20 +84,3 @@ a:hover {
 
 /* ------------adaptive---------- */
 
-@media (max-width: 968px) {
-    html {
-        width: 950px;
-    }
-}
-
-@media (max-width: 768px) {
-    html {
-        width: 750px;
-    }
-}
-
-@media (max-width: 600px) {
-    html {
-        width: 550px;
-    }
-}
