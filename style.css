@@ -79,3 +79,23 @@ a:hover {
 .blocktxt {
     padding: 5px;
 }
+
+/* ------------adaptive---------- */
+
+@media (max-width: 968px) {
+    html {
+        width: 950px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        width: 750px;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        width: 550px;
+    }
+}
