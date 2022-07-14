@@ -1,56 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+
     <header class="header">
         <div class="logo"><img src="circle_avatar.png" width="100px" height="100px"></div>
-        <div class="nav">
-            <p class="navtxt"><a>About </a><a>Contact </a><a>Experience </a></p>
-        </div>
+        <ul class="menu-main">
+            <a class="nav" href="#footer">
+                <li>About</li>
+            </a>
+            <a class="nav" href="">
+                <li>Experience</li>
+            </a>
+            <a class="nav" href="">
+                <li>Works</li>
+            </a>
+            <a class="nav" href="">
+                <li>Contact</li>
+            </a>
+        </ul>
+
     </header>
-    <div class="container">
-        <div class="left-column"></div>
-        <div class="right-column">
-            <p class="hi">Hi world, </p>
-            <p class="name">I am Presnetsov Pavel</p>
-            <p class="job">Front-end developper</p>
-
-            <div class="block">
-                <p class="blocktxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eum velit ipsum
-                    doloremque, optio veritatis voluptatum reprehenderit sed maxime sit voluptas reiciendis aut quisquam
-                    accusamus nobis modi hic quae. Blanditiis.</p>
-            </div>
-            <p class="hi">Hi world, </p>
-            <p class="name">I am Presnetsov Pavel</p>
-            <p class="job">Front-end developper</p>
-
-            <div class="block">
-                <p class="blocktxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eum velit ipsum
-                    doloremque, optio veritatis voluptatum reprehenderit sed maxime sit voluptas reiciendis aut quisquam
-                    accusamus nobis modi hic quae. Blanditiis.</p>
-            </div>
-            <p class="hi">Hi world, </p>
-            <p class="name">I am Presnetsov Pavel</p>
-            <p class="job">Front-end developper</p>
-
-            <div class="block">
-                <p class="blocktxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eum velit ipsum
-                    doloremque, optio veritatis voluptatum reprehenderit sed maxime sit voluptas reiciendis aut quisquam
-                    accusamus nobis modi hic quae. Blanditiis.</p>
-            </div>
-            
-        </div>
-
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#">Главная</a></li>
+            <li><a class="menu__item" href="#">Проекты</a></li>
+            <li><a class="menu__item" href="#">Команда</a></li>
+            <li><a class="menu__item" href="#">Блог</a></li>
+            <li><a class="menu__item" href="#">Контакты</a></li>
+        </ul>
     </div>
-    </body>
+    <div class="container">
+        <div class="left-column">
+            <a href=""><img class="social" src="vectorpaint.svg" width="48px"></a>
+            <a href=""><img class="social" src="vectorpaint.svg" width="48px"></a>
+            <a href=""><img class="social" src="vectorpaint.svg" width="48px"></a>
+            <a href=""><img class="social" src="vectorpaint.svg" width="48px"></a>
+        </div>
+        <div class="right-column">
+            <div class="block1">
+                <p class="hi">Hi world, </p>
+                <p class="name">I am Presnetsov Pavel</p>
+                <p class="job">Front-end developper</p>
+                <div class="block">
+                    <p class="txtblock">I am a novice front-end developer. I study JavaScript, React, HTML, CSS.</p>
+                </div>
+                <div class="block1">
+                    <p class="hi">Hi world, </p>
+                    <p class="name">I am Presnetsov Pavel</p>
+                    <p class="job">Front-end developper</p>
+                    <div class="block">
+                        <p class="txtblock">I am a novice front-end developer. I study JavaScript, React, HTML, CSS.</p>
+                    </div>
+                    <div class="block1">
+                        <p class="hi">Hi world, </p>
+                        <p class="name">I am Presnetsov Pavel</p>
+                        <p class="job">Front-end developper</p>
+                        <div class="block">
+                            <p class="txtblock">I am a novice front-end developer. I study JavaScript, React, HTML, CSS.
+                            </p>
+                        </div>
+                        <div class="block1">
+                            <p class="hi">Hi world, </p>
+                            <p class="name">I am Presnetsov Pavel</p>
+                            <p class="job">Front-end developper</p>
+                            <div class="block">
+                                <p class="txtblock">I am a novice front-end developer. I study JavaScript, React, HTML,
+                                    CSS.</p>
+                            </div>
+                        </div>
 
-    </html>
+                    </div>
+                </div>
+                <div id="footer" class="footer">
+                    <div class="footertxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, consectetur
+                        quis odit mollitia corporis, nemo culpa perspiciatis deleniti enim voluptatem natus asperiores
+                        optio beatae eaque molestias, dignissimos saepe? Sed, alias?</div>
+                </div>
+</body>
+
+</html>

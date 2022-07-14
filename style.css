@@ -1,86 +1,293 @@
 * {
-    font-family: 'Poppins', sans-serif;
-    max-width: 1280px;
     background-color: #020C1B;
-    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
 
-}
-html {
-    width: 1280px;
+body {
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 auto;
-    overflow:hidden;
-    display: flex;
-}
-.container {
-    font-size: 32px;
-    padding-top: 100px;
-    display: flex;
 }
 
 .header {
-    color: white;
-    display: flex;
+    padding: 20px;
     position: sticky;
     top: 0;
-    max-height: 150px;
-    padding-top: 20px;
-}
-.nav {
-    word-spacing: 30px;
-    display: flex;
-    padding-left: 680px;
-    font-size: 32px;
-}
-.logo {
-    width: 100px;
-    height: 100px;
-    position: sticky;
-    top: 0;
-    background-color:white;
-}
-.aboutxt {
-    color: white;
-}
-a {
-    font-style: none;
-}
-a:hover {
-    color: lightgreen;
-}
-.left-column {
-    width: 250px ;
-    color:white;
-}
-.right-column {
-    padding-left: 50px;
-    color:white;
-    text-align: left;
-}
-.hi {
-    font-size: 64px;
-    color:lightgreen;
-}
-.name {
-    font-size: 48px;
-    margin-top: -60px;
-}
-.job {
-    margin-top: -60px;
-    color:lightgrey;
-}
-.block {
-    border: lightgreen solid 4px;
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 150px;
-}
-.blocktxt {
-    padding: 5px;
+    background-color: #020C1B;
+    border-bottom: solid #64FFDA 2px;
 }
 
-/* ------------adaptive---------- */
+.logo {
+    display: inline-block;
+}
+
+.menu-main {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    padding-right: 240px;
+}
+
+.menu-main a {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+    padding: 0 20px;
+    font-weight: 200;
+    float: left;
+}
+
+.menu-main li {
+    display: inline-block;
+    padding-top: 40px;
+    font-size: 2rem;
+}
+
+.container {
+    color: white;
+    display: flex;
+}
+
+.left-column {
+    width: 200px;
+    background-color: #020C1B;
+    height: 100%;
+    position: fixed;
+    top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-column {
+    padding-left: 240px;
+    height: 100%;
+    padding-right: 240px;
+}
+
+.hi {
+    color: #64FFDA;
+    font-size: 6rem;
+}
+
+.name {
+    font-weight: 100;
+    margin-top: -140px;
+    font-size: 4rem;
+}
+
+.job {
+    margin-top: -80px;
+    padding-bottom: 100px;
+    font-size: 2rem;
+    color: #64FFDA;
+}
+
+.block {
+    margin-top: -30px;
+    margin-bottom: 300px;
+    border: #64FFDA solid 3px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 0;
+}
+
+.txtblock {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 5px;
+}
+
+.nav {
+    color: white;
+}
+
+.nav:hover {
+    color: #64FFDA;
+}
+
+.social {
+    padding-top: 25px;
+}
+
+.footer {
+    width: auto;
+    margin: -10%;
+    height: 100px;
+    position: relative;
+    color: #ffffff;
+    border-top: solid 2px #64FFDA;
+
+}
+
+/* Adaptive @media 1024px 780px 748px */
+@media (max-width: 1024px) {
+    .left-column {
+        display: none;
+    }
+
+    .right-column {
+        text-align: center;
+        padding: 0 10%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .header {
+        padding: 0 auto;
+        display: flex;
+        justify-content: center;
+        border: none;
+        position: static;
+    }
+
+    .menu-main {
+        padding: 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .right-column {
+        padding: 0 5%;
+    }
+
+    .header {
+        padding: 0 7%;
+        display: flex;
+        border: none;
+        position: static;
+    }
+
+    .nav {
+        margin: 0 15%;
+    }
+
+    .footer {
+        margin: 0 5%;
+    }
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width:748px) {
+    .footer {
+        position: static;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .menu-main {
+        display: none;
+    }
+
+    .menu__toggle {
+        opacity: 0;
+    }
+
+    /* стилизуем кнопку */
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    /* стилизуем кнопку */
+    .menu__btn {
+        display: flex;
+        /* используем flex для центрирования содержимого */
+        align-items: center;
+        /* центрируем содержимое кнопки */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    /* добавляем "гамбургер" */
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    /* контейнер меню */
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        opacity: 0.95;
+        text-align: center;
+        background-color: #020C1B;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+
+    /* элементы меню */
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .menu__item:hover {
+        background-color: #64FFDA;
+    }
+
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked~.menu__box {
+        visibility: visible;
+        left: 0;
+    }
+}
+
+/* /// 320px, 360px, 768px, 1024px, 1280px /// */
+/* скрываем чекбокс */
 
