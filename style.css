@@ -3,6 +3,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    overflow: hidden;
+}
+
 body {
     max-width: 1690px;
     margin: 0 auto;
